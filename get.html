@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="Assets/favicon.ico" alt="logo">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/533371ee80.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/533371ee80.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .about-me {
+        width: 40%;
+        padding: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(5, 5, 5, 0.9);
+    }
+
+    .profile-pic {
+        width: 30%;
+        padding: 20px;
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: auto;
+        border-radius: 30%;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .profile-pic {
+            width: 100%;
+        }
+
+        .about-me {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .project-container {
+            flex-direction: column;
+        }
+
+        .project-pic,
+        .project-desc {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .contact-container {
+            flex-direction: column;
+        }
+
+        .contact-info {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-style">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mini-icon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="nav-com" style="margin-top: 70px;">Frinz Charles Biasora Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="mini-icon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><button class="btn btn-default" type="button"><a href="index.html" class="nav-text"
+                                    style="text-decoration: none;">Home</a></li></button>
+                        <li><button class="btn btn-default" type="button"><a href="#about " class="nav-text"
+                                    style="text-decoration: none;">About Me</a></button></li>
+                        <li><button class="btn btn-default" type="button"><a href="#contact" class="nav-text"
+                                    style="text-decoration: none;">Contact</a></button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br><br><br><br><br><br>
+    <div class="container">
+        <div class="profile-pic">
+            <img src="charles.jpg" alt="Your Profile Picture">
+        </div>
+        <div class="about-me">
+            <h1>About Me</h1>
+            <p>Hi, my name is Frinz Charles B. Biasora. I am a student in Phinma University of Pangasinan with a passion
+                for creating innovative and
+                user-friendly applications and websites. I have experience in various programming languages and
+                technologies,
+                including HTML, CSS, Java, Python, and and Kotlin.</p>
+            <p>In my free time, I enjoy playing video games, watching movies, and learning new skills. I am always open
+                to new opportunities and willing to learn.</p>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <section id="about">
+        <div class="project-container">
+            <div class="project-pic">
+                <img src="first pic.png" alt="Your Project Picture">
+            </div>
+            <div class="project-desc">
+                <div class="project-title">Project Title</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a pharetra auctor, mi
+                    velit venenatis nisl, vel aliquet nunc nisi a nunc. Sed bibendum, nunc non tincidunt bibendum, nunc
+                    nisi aliquet nunc, et fringilla nunc nisl vel sapien. Sed bibendum, nunc non tincidunt bibendum,
+                    nunc nisi aliquet nunc, et fringilla nunc nisl vel sapien.</p>
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-desc">
+                <div class="project-title">Project Title</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a pharetra auctor, mi
+                    velit venenatis nisl, vel aliquet nunc nisi a nunc. Sed bibendum, nunc non tincidunt bibendum, nunc
+                    nisi aliquet nunc, et fringilla nunc nisl vel sapien. Sed bibendum, nunc non tincidunt bibendum,
+                    nunc nisi aliquet nunc, et fringilla nunc nisl vel sapien.</p>
+            </div>
+            <div class="project-pic">
+                <img src="2nd.png" alt="Your Project Picture">
+            </div>
+        </div>
+        <div class="project-container">
+            <div class="project-pic">
+                <img src="third.png" alt="Your Project Picture">
+            </div>
+            <div class="project-desc">
+                <div class="project-title">Project Title</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna a pharetra auctor, mi
+                    velit venenatis nisl, vel aliquet nunc nisi a nunc. Sed bibendum, nunc non tincidunt bibendum, nunc
+                    nisi aliquet nunc, et fringilla nunc nisl vel sapien. Sed bibendum, nunc non tincidunt bibendum,
+                    nunc nisi aliquet nunc, et fringilla nunc nisl vel sapien.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-title">Contact Me</div>
+            <div class="contact-info">
+                <p>Email: frba.biasora@phinmaed.com</p>
+                <p>Phone: 09335838389</p>
+                <p>Lekep-Butao, San Fabian, Pangasinan</p>
+            </div>
+            <button class="contact-button"><a href="https://www.facebook.com/Kat.Kan.2/">Contact Me</button></a>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <nav class="navbar navbar-style-footer" style="margin: 0px">
+            <hr>
+            <center>
+                <p style="color: #FFF; font-size: 12px;">© 2024 Frinz Charles Portfolio</p>
+            </center>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $(".navbar-toggle").click(function () {
+                $(".navbar-nav").toggleClass("collapse");
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
